@@ -1,5 +1,9 @@
 # Create T3 App
 
+
+`https://color-twitter.vercel.app`
+`https://railway.app/project/0156ff9f-852c-45c9-99bf-888bb072e053/`
+
 This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
 
 ## What's next? How do I make an app with this?
