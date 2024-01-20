@@ -4,7 +4,7 @@ import {Inter} from "next/font/google";
 
 import {TRPCReactProvider} from "@/trpc/react";
 import {SideNav} from "@/app/components/SideNav";
-import {Provider} from "@/app/components/Provider";
+import {AuthProvider} from "@/app/components/AuthProvider";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -26,23 +26,22 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <Provider>
+        <AuthProvider>
+            <TRPCReactProvider>
+
             <html lang="en">
             <body className={`font-sans ${inter.variable}`}>
 
-            <TRPCReactProvider>
                 <div className="container mx-auto flex items-start">
                     <SideNav/>
 
                     <div className="min-h-screen flex-grow border-x border-slate-200 sm:pr-4">
                         {children}
                     </div>
-
                 </div>
-            </TRPCReactProvider>
-
             </body>
             </html>
-        </Provider>
+            </TRPCReactProvider>
+        </AuthProvider>
     );
 }

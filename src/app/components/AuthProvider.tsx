@@ -9,7 +9,7 @@ interface ProviderProps {
     session?: Session;
 }
 
-export const Provider: FC<ProviderProps> = ({
+export const AuthProvider: FC<ProviderProps> = ({
                                                 children,
                                                 session
                                             }) => {
