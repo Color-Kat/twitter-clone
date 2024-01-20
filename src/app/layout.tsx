@@ -29,17 +29,18 @@ export default function RootLayout({
         <Provider>
             <html lang="en">
             <body className={`font-sans ${inter.variable}`}>
-            <TRPCReactProvider>
 
+            <TRPCReactProvider>
                 <div className="container mx-auto flex items-start">
                     <SideNav/>
 
-                    <div className="min-h-screen  flex-grow border-x border-slate-200">
+                    <div className="min-h-screen flex-grow border-x border-slate-200 sm:pr-4">
                         {children}
                     </div>
 
                 </div>
             </TRPCReactProvider>
+
             </body>
             </html>
         </Provider>

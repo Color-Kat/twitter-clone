@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="up to date">
-      <change afterPath="$PROJECT_DIR$/src/app/components/Provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/SideNav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="log in\log out through next auth (Provider client component)">
+      <change afterPath="$PROJECT_DIR$/src/app/UI/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/NewTweetForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ProfileImage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
     </list>
@@ -69,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1705685934531</updated>
       <workItem from="1705685935525" duration="6508000" />
-      <workItem from="1705743962013" duration="6640000" />
+      <workItem from="1705743962013" duration="8376000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -87,7 +87,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705695408111</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="log in\log out through next auth (Provider client component)">
+      <option name="closed" value="true" />
+      <created>1705751057111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705751057111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +117,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="set up local and production boilplate" />
     <MESSAGE value="up to date" />
-    <option name="LAST_COMMIT_MESSAGE" value="up to date" />
+    <MESSAGE value="log in\log out through next auth (Provider client component)" />
+    <option name="LAST_COMMIT_MESSAGE" value="log in\log out through next auth (Provider client component)" />
   </component>
 </project>
