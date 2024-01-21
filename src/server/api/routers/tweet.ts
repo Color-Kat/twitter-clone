@@ -20,7 +20,7 @@ export const tweetRouter = createTRPCRouter({
 
             const data = await ctx.db.tweet.findMany({
                 take: limit + 1,
-                cursor: cursor ? {createdAt_id: cursor} : undefined,
+                cursor: cursor ? cursor : undefined,
                 orderBy: [{createdAt: 'desc'}, {id: 'desc'}],
                 select: {
                     id: true,

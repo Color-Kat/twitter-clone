@@ -29,14 +29,14 @@ export const HeartButton: FC<HeartButtonProps> = memo(({
 
     return (
         <button className={twJoin(
-            "group items-center gap-1 self-start flex transition-colors duration-200",
+            "group items-center gap-1 self-start flex transition-colors duration-200 -ml-2",
             likedByMe
                 ? "text-red-500"
                 : "text-gray-500 hover:text-red-500 focus-visible:text-red-500"
         )}>
             <IconHoverEffect red>
                 <HeartIcon className={twJoin(
-                    "transition-colors duration-200 -ml-2",
+                    "transition-colors duration-200",
                     likedByMe
                         ? "fill-red-500"
                         : "group-hover:fill-red-500 fill-gray-500 group-focus-visible:fill-red-500"

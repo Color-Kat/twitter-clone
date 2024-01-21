@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="load recent tweets with infinite scroll">
-      <change afterPath="$PROJECT_DIR$/src/app/components/HeartButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/IconHoverEffect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/TweetCard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/types/Tweet.ts" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="like button with likeCount and IconHoverEffect.tsx for nav">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/InfiniteTweetList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/InfiniteTweetList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/SideNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/SideNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/HeartButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/HeartButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/ProfileImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ProfileImage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/api/routers/tweet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/routers/tweet.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,7 @@
       <updated>1705685934531</updated>
       <workItem from="1705685935525" duration="6508000" />
       <workItem from="1705743962013" duration="13655000" />
-      <workItem from="1705826260673" duration="10189000" />
+      <workItem from="1705826260673" duration="10703000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -120,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705831527274</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="like button with likeCount and IconHoverEffect.tsx for nav">
+      <option name="closed" value="true" />
+      <created>1705844255208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705844255208</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +149,7 @@
     <MESSAGE value="display NewTweetForm.tsx, ProfileImage.tsx and Button.tsx components" />
     <MESSAGE value="auto adjust new tweet form" />
     <MESSAGE value="load recent tweets with infinite scroll" />
-    <option name="LAST_COMMIT_MESSAGE" value="load recent tweets with infinite scroll" />
+    <MESSAGE value="like button with likeCount and IconHoverEffect.tsx for nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="like button with likeCount and IconHoverEffect.tsx for nav" />
   </component>
 </project>

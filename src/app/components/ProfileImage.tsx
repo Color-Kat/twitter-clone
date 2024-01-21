@@ -1,6 +1,7 @@
 import React, {memo, FC} from 'react';
 import {twMerge} from "tailwind-merge";
 import Image from "next/image";
+import {VscAccount} from "react-icons/vsc";
 
 interface ProfileImageProps {
     src?: string | null;
@@ -19,7 +20,7 @@ export const ProfileImage: FC<ProfileImageProps> = ({
             className
         )}>
             {src == null
-                ? null
+                ? <VscAccount className="w-full h-full" />
                 : <Image
                     src={src}
                     alt="Profile Image"
