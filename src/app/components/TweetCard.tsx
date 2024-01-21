@@ -21,8 +21,33 @@ export const TweetCard: FC<Tweet> = ({
     const trpcUtils = api.useContext();
 
     const toggleLike = api.tweet.toggleLike.useMutation({
-        onSuccess: async ({addedLike}) => {
-            await trpcUtils.tweet.infiniteFeed.invalidate();
+        onSuccess: ({addedLike}) => {
+            const updateData: Parameters<
+                typeof trpcUtils.tweet.infiniteFeed.setInfiniteData
+            >[1] = (oldData) => {
+                if(oldData == null) return;
+
+                const countModifier = addedLike ? 1 : -1;
+                return {
+                    ...oldData,
+                    pages: oldData.pages.map(page => ({
+                        ...page,
+                        tweets: page.tweets.map(tweet => {
+                            if(tweet.id === id) return {
+                                ...tweet,
+                                likeCount: tweet.likeCount + countModifier,
+                                likedByMe: addedLike
+                            }
+                            return tweet;
+                        })
+                    }))
+                }
+            }
+            
+            trpcUtils.tweet.infiniteFeed.setInfiniteData(
+                {},
+                updateData
+            );
         }
     });
 
