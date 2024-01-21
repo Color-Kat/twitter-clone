@@ -1,18 +1,7 @@
 import React, {memo, FC} from 'react';
 import InfiniteScroll from "react-infinite-scroll-component";
-
-type Tweet = {
-    id: string,
-    content: string,
-    createdAt: Date,
-    likeCount: number,
-    likedByMe: boolean,
-    user: {
-        id: string,
-        image: string | null,
-        name: string | null
-    };
-}
+import {Tweet} from "@/app/types/Tweet";
+import {TweetCard} from "@/app/components/TweetCard";
 
 interface InfiniteTweetListProps {
     tweets?: Tweet[];
@@ -41,8 +30,18 @@ export const InfiniteTweetList: FC<InfiniteTweetListProps> = ({
 
     return (
         <ul className="">
-            <InfiniteScroll next={} hasMore={} loader={} dataLength={}>
-                
+            <InfiniteScroll
+                next={fetchNewTweets}
+                hasMore={hasMore}
+                loader={"Loading..."}
+                dataLength={tweets.length}
+            >
+                {tweets.map(tweet => {
+                    return <TweetCard
+                        key={tweet.id}
+                        {...tweet}
+                    />;
+                })}
             </InfiniteScroll>
         </ul>
     );
