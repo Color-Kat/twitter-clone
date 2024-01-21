@@ -1,20 +1,24 @@
 'use client';
 
-import React, {memo, FC} from 'react';
-import {useSession} from "next-auth/react";
-import {VscHeart, VscHeartFilled} from "react-icons/vsc";
-import {twJoin} from "tailwind-merge";
-import {IconHoverEffect} from "@/app/components/IconHoverEffect";
+import React, { memo, FC } from 'react';
+import { useSession } from "next-auth/react";
+import { VscHeart, VscHeartFilled } from "react-icons/vsc";
+import { twJoin } from "tailwind-merge";
+import { IconHoverEffect } from "@/app/components/IconHoverEffect";
 
 interface HeartButtonProps {
     likedByMe: boolean;
     likeCount: number;
+    onClick: () => void;
+    isLoading: boolean;
 }
 
 export const HeartButton: FC<HeartButtonProps> = memo(({
-                                                           likedByMe,
-                                                           likeCount
-                                                       }) => {
+    likedByMe,
+    likeCount,
+    onClick,
+    isLoading
+}) => {
     const session = useSession();
     const HeartIcon = likedByMe
         ? VscHeartFilled
@@ -28,12 +32,16 @@ export const HeartButton: FC<HeartButtonProps> = memo(({
     );
 
     return (
-        <button className={twJoin(
-            "group items-center gap-1 self-start flex transition-colors duration-200 -ml-2",
-            likedByMe
-                ? "text-red-500"
-                : "text-gray-500 hover:text-red-500 focus-visible:text-red-500"
-        )}>
+        <button
+            disabled={isLoading}
+            onClick={onClick}
+            className={twJoin(
+                "group items-center gap-1 self-start flex transition-colors duration-200 -ml-2",
+                likedByMe
+                    ? "text-red-500"
+                    : "text-gray-500 hover:text-red-500 focus-visible:text-red-500"
+            )}
+        >
             <IconHoverEffect red>
                 <HeartIcon className={twJoin(
                     "transition-colors duration-200",

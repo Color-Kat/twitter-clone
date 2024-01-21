@@ -1,4 +1,4 @@
-import {z} from "zod";
+import { z } from "zod";
 
 import {
     createTRPCRouter,
@@ -15,23 +15,23 @@ export const tweetRouter = createTRPCRouter({
                 createdAt: z.date()
             }).optional()
         }))
-        .query(async ({input: {limit = 10, cursor}, ctx}) => {
+        .query(async ({ input: { limit = 10, cursor }, ctx }) => {
             const currentUserId = ctx.session?.user.id;
 
             const data = await ctx.db.tweet.findMany({
                 take: limit + 1,
                 cursor: cursor ? cursor : undefined,
-                orderBy: [{createdAt: 'desc'}, {id: 'desc'}],
+                orderBy: [{ createdAt: 'desc' }, { id: 'desc' }],
                 select: {
                     id: true,
                     content: true,
                     createdAt: true,
-                    _count: {select: {likes: true}},
+                    _count: { select: { likes: true } },
                     likes: currentUserId
-                        ? {where: {userId: currentUserId}}
+                        ? { where: { userId: currentUserId } }
                         : false,
                     user: {
-                        select: {name: true, id: true, image: true}
+                        select: { name: true, id: true, image: true }
                     }
                 }
             });
@@ -53,7 +53,7 @@ export const tweetRouter = createTRPCRouter({
                         content: tweet.content,
                         createdAt: tweet.createdAt,
                         likeCount: tweet._count.likes,
-                        user: {...tweet.user},
+                        user: { ...tweet.user },
                         likedByMe: tweet.likes?.length > 0
                     }
                 }),
@@ -61,13 +61,34 @@ export const tweetRouter = createTRPCRouter({
             }
         }),
     create: protectedProcedure
-        .input(z.object({content: z.string()}))
-        .mutation(async ({input: {content}, ctx}) => {
+        .input(z.object({ content: z.string() }))
+        .mutation(async ({ input: { content }, ctx }) => {
             return await ctx.db.tweet.create({
                 data: {
                     content,
                     userId: ctx.session.user.id
                 }
             })
+        }),
+    toggleLike: protectedProcedure
+        .input(z.object({
+            id: z.string()
+        }))
+        .output(z.object({
+            addedLike: z.boolean()
+        }))
+        .mutation(async ({ input: { id }, ctx }) => {
+            const data = { tweetId: id, userId: ctx.session.user.id };
+            const existingTweet = await ctx.db.like.findUnique({
+                where: { userId_tweetId: data }
+            });
+
+            if (existingTweet == null) {
+                await ctx.db.like.create({ data });
+                return { addedLike: true };
+            } else {
+                await ctx.db.like.delete({ where: { userId_tweetId: data } })
+                return { addedLike: false };
+            }
         }),
 });
