@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="toggle likes">
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="auto update likes count">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/TweetCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/TweetCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/NewTweetForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/NewTweetForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <workItem from="1705685935525" duration="6508000" />
       <workItem from="1705743962013" duration="13655000" />
       <workItem from="1705826260673" duration="10724000" />
-      <workItem from="1705857042605" duration="2704000" />
+      <workItem from="1705857042605" duration="5132000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -138,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705859074204</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="auto update likes count">
+      <option name="closed" value="true" />
+      <created>1705859877360</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705859877360</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +175,7 @@
     <MESSAGE value="like button with likeCount and IconHoverEffect.tsx for nav" />
     <MESSAGE value="infinite scroll" />
     <MESSAGE value="toggle likes" />
-    <option name="LAST_COMMIT_MESSAGE" value="toggle likes" />
+    <MESSAGE value="auto update likes count" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto update likes count" />
   </component>
 </project>
