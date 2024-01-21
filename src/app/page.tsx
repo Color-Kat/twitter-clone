@@ -1,5 +1,6 @@
 import {NextPage} from 'next';
 import {NewTweetForm} from "@/app/components/NewTweetForm";
+import {RecentTweets} from "@/app/components/RecentTweets";
 
 const Home: NextPage = ({}) => {
 
@@ -10,6 +11,8 @@ const Home: NextPage = ({}) => {
             </header>
 
             <NewTweetForm />
+
+            <RecentTweets />
         </>
     );
 };

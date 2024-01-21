@@ -4,6 +4,7 @@ import React, {memo, FC, useEffect, useRef, useLayoutEffect, useCallback} from '
 import {Button} from "@/app/UI/Button";
 import {ProfileImage} from "@/app/components/ProfileImage";
 import {useSession} from "next-auth/react";
+import {api} from "@/trpc/react";
 
 function updateTextAreaSize(textarea?: HTMLTextAreaElement) {
     if(!textarea) return;
@@ -35,10 +36,23 @@ const Form: FC = ({}) => {
         updateTextAreaSize(textAreaRef.current);
     }, [inputValue]);
 
+    const createTweet = api.tweet.create.useMutation({
+        onSuccess: newTweet => {
+            setInputValue("")
+        }
+    });
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        createTweet.mutate({
+            content: inputValue
+        });
+    }
+
     if(session.status !== "authenticated") return null;
 
     return (
-        <form className="flex flex-col gap-2 border-b px-4 py-2">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-2 border-b px-4 py-2">
             <div className="flex gap-4">
                 <ProfileImage src={session.data.user.image} />
 
