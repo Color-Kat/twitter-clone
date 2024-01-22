@@ -2,6 +2,7 @@ import React, {memo, FC} from 'react';
 import InfiniteScroll from "react-infinite-scroll-component";
 import {Tweet} from "@/app/types/Tweet";
 import {TweetCard} from "@/app/components/TweetCard";
+import { LoadingSpinner } from "@/app/components/LoadingSpinner";
 
 interface InfiniteTweetListProps {
     tweets?: Tweet[];
@@ -19,10 +20,12 @@ export const InfiniteTweetList: FC<InfiniteTweetListProps> = ({
                                                                   hasMore
                                                               }) => {
 
-    if(isLoading) return <h1>Loading...</h1>;
+    if(isLoading) return <LoadingSpinner />;
     if(isError) return <h1>Error...</h1>;
 
-    if(!tweets) return (
+    console.log(tweets)
+
+    if(!tweets || !tweets.length) return (
         <h2 className="my-4 text-center text-2xl text-gray-500">
             No Tweets
         </h2>
@@ -33,7 +36,7 @@ export const InfiniteTweetList: FC<InfiniteTweetListProps> = ({
             <InfiniteScroll
                 next={fetchNewTweets}
                 hasMore={hasMore}
-                loader={"Loading..."}
+                loader={<LoadingSpinner />}
                 dataLength={tweets.length}
             >
                 {tweets.map(tweet => {
