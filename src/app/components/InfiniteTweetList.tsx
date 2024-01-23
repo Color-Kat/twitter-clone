@@ -23,8 +23,6 @@ export const InfiniteTweetList: FC<InfiniteTweetListProps> = ({
     if(isLoading) return <LoadingSpinner />;
     if(isError) return <h1>Error...</h1>;
 
-    console.log(tweets)
-
     if(!tweets || !tweets.length) return (
         <h2 className="my-4 text-center text-2xl text-gray-500">
             No Tweets
