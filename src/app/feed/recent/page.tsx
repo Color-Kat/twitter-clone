@@ -3,10 +3,23 @@ import { Tabs } from "@/components/Tabs";
 import { NewTweetForm } from "@/components/NewTweetForm";
 import React from "react";
 import { RecentTweets } from "@/components/RecentTweets";
+import { serverApi } from "@/trpc/server";
+import { serverClient } from "@/trpc/serverClient";
 
-const ResentTweetsPage: NextPage = ({
+const ResentTweetsPage: NextPage = async ({
 
 }) => {
+
+    const tweets = await serverApi.tweet.infiniteFeed.query(
+        {},
+        {}
+    );
+
+    console.log(tweets)
+
+    // const tweet2 = await serverClient.tweet.infiniteFeed(
+    //     {},
+    // );
     
     return (
         <div className="">
@@ -21,7 +34,9 @@ const ResentTweetsPage: NextPage = ({
 
             <NewTweetForm/>
 
-            <RecentTweets />
+            <RecentTweets
+                initialTweets={tweets}
+            />
         </div>
     );
 };

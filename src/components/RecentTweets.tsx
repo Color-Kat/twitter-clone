@@ -1,24 +1,37 @@
-import React, {memo, FC} from 'react';
-// import {api} from "@/trpc/react";
-// import {InfiniteTweetList} from "@/components/InfiniteTweetList";
+'use client';
 
-export const RecentTweets: FC = ({}) => {
-    return <div>coool</div>
+import React, {FC} from 'react';
+import { InfiniteTweetList } from "@/components/InfiniteTweetList";
+import { api } from "@/trpc/react";
+import { serverApi } from "@/trpc/server";
 
-    // const tweets = api.tweet.infiniteFeed.useInfiniteQuery(
-    //     {},
-    //     {getNextPageParam: lastPage => lastPage.nextCursor}
-    // );
-    //
-    // return (
-    //     <InfiniteTweetList
-    //         tweets={
-    //             tweets.data?.pages.flatMap(page => page.tweets)
-    //         }
-    //         isError={tweets.isError}
-    //         isLoading={tweets.isLoading}
-    //         hasMore={Boolean(tweets.hasNextPage)}
-    //         fetchNewTweets={tweets.fetchNextPage}
-    //     />
-    // );
+export const RecentTweets: FC<{
+    initialTweets: Awaited<ReturnType<(typeof serverApi.tweet.infiniteFeed.query)>>
+}> = ({
+    initialTweets
+}) => {
+    const tweets = api.tweet.infiniteFeed.useInfiniteQuery(
+        {},
+        {
+            getNextPageParam: lastPage => lastPage.nextCursor,
+            initialData: {
+                pageParams: [],
+                pages: [
+                    { ...initialTweets }
+                ]
+            }
+        }
+    );
+
+    return (
+        <InfiniteTweetList
+            tweets={
+                tweets.data?.pages.flatMap(page => page.tweets)
+            }
+            isError={tweets.isError}
+            isLoading={tweets.isLoading}
+            hasMore={Boolean(tweets.hasNextPage)}
+            fetchNewTweets={tweets.fetchNextPage}
+        />
+    );
 };

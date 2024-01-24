@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="idk what is it">
-      <change afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Tabs.tsx" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server components for auth">
+      <change afterPath="$PROJECT_DIR$/src/trpc/serverClient.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/UI/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/_components/create-post.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/AuthProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/FollowingTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/HeartButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeartButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/IconHoverEffect.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IconHoverEffect.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/InfiniteTweetList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InfiniteTweetList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/LoadingSpinner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LoadingSpinner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/NewTweetForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NewTweetForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/ProfileImage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileImage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/RecentTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecentTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/SideNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/TweetCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/types/Tweet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/Tweet.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecentTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecentTweets.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trpc/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/trpc/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +84,7 @@
       <workItem from="1705943995183" duration="5365000" />
       <workItem from="1706031333004" duration="1323000" />
       <workItem from="1706074122228" duration="24000" />
-      <workItem from="1706117300239" duration="4052000" />
+      <workItem from="1706117300239" duration="6524000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -212,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706039382169</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="server components for auth">
+      <option name="closed" value="true" />
+      <created>1706123599452</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1706123599452</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +251,7 @@
     <MESSAGE value="tabs and get only following tweets" />
     <MESSAGE value="loader" />
     <MESSAGE value="idk what is it" />
-    <option name="LAST_COMMIT_MESSAGE" value="idk what is it" />
+    <MESSAGE value="server components for auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="server components for auth" />
   </component>
 </project>
