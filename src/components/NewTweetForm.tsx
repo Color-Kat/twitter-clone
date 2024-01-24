@@ -1,11 +1,11 @@
 'use client';
 
 import React, { memo, FC, useEffect, useRef, useLayoutEffect, useCallback } from 'react';
-import { Button } from "@/app/UI/Button";
-import { ProfileImage } from "@/app/components/ProfileImage";
+import { Button } from "@/UI/Button";
+import { ProfileImage } from "@/components/ProfileImage";
 import { useSession } from "next-auth/react";
 import { api } from "@/trpc/react";
-import { Tweet } from "@/app/types/Tweet";
+import { Tweet } from "@/types/Tweet";
 
 function updateTextAreaSize(textarea?: HTMLTextAreaElement) {
     if (!textarea) return;

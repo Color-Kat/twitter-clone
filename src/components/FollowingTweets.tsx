@@ -2,11 +2,11 @@
 
 import React, {memo, FC} from 'react';
 import {api} from "@/trpc/react";
-import {InfiniteTweetList} from "@/app/components/InfiniteTweetList";
+import {InfiniteTweetList} from "@/components/InfiniteTweetList";
 
-export const RecentTweets: FC = memo(({}) => {
+export const FollowingTweets: FC = memo(({}) => {
     const tweets = api.tweet.infiniteFeed.useInfiniteQuery(
-        {},
+        {onlyFollowing: true},
         {getNextPageParam: lastPage => lastPage.nextCursor}
     );
 

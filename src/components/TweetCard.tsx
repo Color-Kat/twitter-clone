@@ -1,9 +1,9 @@
 import React, { memo, FC } from 'react';
-import { Tweet } from "@/app/types/Tweet";
+import { Tweet } from "@/types/Tweet";
 import Link from "next/link";
 import Image from "next/image";
-import { ProfileImage } from "@/app/components/ProfileImage";
-import { HeartButton } from "@/app/components/HeartButton";
+import { ProfileImage } from "@/components/ProfileImage";
+import { HeartButton } from "@/components/HeartButton";
 import { api } from "@/trpc/react";
 
 const dateTimeFormatter = Intl.DateTimeFormat('en-US', {

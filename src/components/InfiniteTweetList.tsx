@@ -1,8 +1,8 @@
 import React, {memo, FC} from 'react';
 import InfiniteScroll from "react-infinite-scroll-component";
-import {Tweet} from "@/app/types/Tweet";
-import {TweetCard} from "@/app/components/TweetCard";
-import { LoadingSpinner } from "@/app/components/LoadingSpinner";
+import {Tweet} from "@/types/Tweet";
+import {TweetCard} from "@/components/TweetCard";
+import { LoadingSpinner } from "@/components/LoadingSpinner";
 
 interface InfiniteTweetListProps {
     tweets?: Tweet[];

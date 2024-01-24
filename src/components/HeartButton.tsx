@@ -4,7 +4,7 @@ import React, { memo, FC } from 'react';
 import { useSession } from "next-auth/react";
 import { VscHeart, VscHeartFilled } from "react-icons/vsc";
 import { twJoin } from "tailwind-merge";
-import { IconHoverEffect } from "@/app/components/IconHoverEffect";
+import { IconHoverEffect } from "@/components/IconHoverEffect";
 
 interface HeartButtonProps {
     likedByMe: boolean;

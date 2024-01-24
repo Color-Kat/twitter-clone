@@ -2,7 +2,7 @@
 import React, {memo, FC} from 'react';
 import Link from "next/link";
 import {signIn, signOut, useSession} from "next-auth/react";
-import {IconHoverEffect} from "@/app/components/IconHoverEffect";
+import {IconHoverEffect} from "@/components/IconHoverEffect";
 import {VscAccount, VscHome, VscSignIn, VscSignOut} from "react-icons/vsc";
 
 export const SideNav: FC = ({}) => {

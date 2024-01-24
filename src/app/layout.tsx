@@ -3,8 +3,8 @@ import "@/styles/globals.css";
 import {Inter} from "next/font/google";
 
 import {TRPCReactProvider} from "@/trpc/react";
-import {SideNav} from "@/app/components/SideNav";
-import {AuthProvider} from "@/app/components/AuthProvider";
+import {SideNav} from "@/components/SideNav";
+import {AuthProvider} from "@/components/AuthProvider";
 
 const inter = Inter({
     subsets: ["latin"],
