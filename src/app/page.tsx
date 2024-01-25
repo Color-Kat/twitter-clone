@@ -5,7 +5,6 @@ import { Tabs } from "@/app/feed/components/Tabs";
 import RecentTweets from './feed/recent/page';
 
 
-
 const Home: NextPage = async ({}) => {
 
 

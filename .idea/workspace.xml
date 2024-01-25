@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server side component for following tweets, client component for tabs wrapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeartButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeartButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecentTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecentTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TweetCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trpc/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/trpc/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

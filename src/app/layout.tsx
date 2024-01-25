@@ -5,6 +5,7 @@ import {Inter} from "next/font/google";
 import {TRPCReactProvider} from "@/trpc/react";
 import {SideNav} from "@/components/SideNav";
 import {AuthProvider} from "@/components/AuthProvider";
+import { unstable_noStore as noStore } from "next/cache";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -25,6 +26,8 @@ export default function RootLayout({
                                    }: {
     children: React.ReactNode;
 }) {
+    noStore();
+
     return (
         <AuthProvider>
             <TRPCReactProvider>

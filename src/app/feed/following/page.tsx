@@ -2,9 +2,12 @@ import {NextPage} from 'next';
 import { TabsWrapper } from "@/app/feed/components/TabsWrapper";
 import { FollowingTweets } from "@/components/FollowingTweets";
 import { serverClient } from "@/trpc/serverClient";
+import { serverApi } from "@/trpc/server";
+import { unstable_noStore as noStore } from "next/cache";
 
 const FollowingTweetsPage: NextPage = async ({}) => {
-    const tweets = await serverClient.tweet.infiniteFeed({
+    noStore();
+    const tweets = await serverApi.tweet.infiniteFeed.query({
         onlyFollowing: true
     });
     
