@@ -1,35 +1,28 @@
-import { NextPage } from 'next';
+import React, { FC, ReactNode, ComponentProps } from 'react';
 import { NewTweetForm } from "@/components/NewTweetForm";
-import React from "react";
 import { Tabs } from "@/app/feed/components/Tabs";
-import { redirect } from "next/navigation";
 
-import RecentTweets from './feed/recent/page';
+interface TabsProps {
+    children: ReactNode;
+    current: ComponentProps<typeof Tabs>['current']
+}
 
-
-
-const Home: NextPage = async ({}) => {
-
-
-    // redirect('/feed/recent');
-
+export const TabsWrapper: FC<TabsProps> = ({current, children}) => {
 
 
     return (
-        <>
+        <div className="">
             <header className="sticky top-o z-10 border-b bg-white pt-2">
                 <h1 className="mb-2 px-4 text-lg font-bold">Home</h1>
 
                 <Tabs
-                    current="Recent"
+                    current={current}
                 />
-
             </header>
 
             <NewTweetForm/>
-        </>
+
+            {children}
+        </div>
     );
 };
-
-// export default Home;
-export default RecentTweets;

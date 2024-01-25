@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server components for auth">
-      <change afterPath="$PROJECT_DIR$/src/trpc/serverClient.ts" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server side recent tweets loading">
+      <change afterPath="$PROJECT_DIR$/src/app/feed/components/TabsWrapper.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecentTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecentTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/components/Tabs.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trpc/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/trpc/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,28 +43,29 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "D:/Programming/TwitterClone/src/app/(feed)",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.XML",
-    "ts.external.directory.path": "D:\\Programming\\TwitterClone\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/TwitterClone/src/app/(feed)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.XML&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Programming\\TwitterClone\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Programming\TwitterClone\src\app\(feed)" />
       <recent name="D:\Programming\TwitterClone\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programming\TwitterClone\src\app\feed\components" />
       <recent name="D:\Programming\TwitterClone\src" />
     </key>
   </component>
@@ -84,7 +87,8 @@
       <workItem from="1705943995183" duration="5365000" />
       <workItem from="1706031333004" duration="1323000" />
       <workItem from="1706074122228" duration="24000" />
-      <workItem from="1706117300239" duration="6524000" />
+      <workItem from="1706117300239" duration="6616000" />
+      <workItem from="1706195318452" duration="3685000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -206,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706123599452</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="server side recent tweets loading">
+      <option name="closed" value="true" />
+      <created>1706126144054</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1706126144054</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +264,7 @@
     <MESSAGE value="loader" />
     <MESSAGE value="idk what is it" />
     <MESSAGE value="server components for auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="server components for auth" />
+    <MESSAGE value="server side recent tweets loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="server side recent tweets loading" />
   </component>
 </project>

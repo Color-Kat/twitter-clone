@@ -3,11 +3,25 @@
 import React, {memo, FC} from 'react';
 import {api} from "@/trpc/react";
 import {InfiniteTweetList} from "@/components/InfiniteTweetList";
+import { serverApi } from "@/trpc/server";
+import { serverClient } from "@/trpc/serverClient";
 
-export const FollowingTweets: FC = memo(({}) => {
+export const FollowingTweets: FC<{
+    initialTweets: Awaited<ReturnType<(typeof serverClient.tweet.infiniteFeed)>>
+}> = ({
+    initialTweets
+}) => {
     const tweets = api.tweet.infiniteFeed.useInfiniteQuery(
         {onlyFollowing: true},
-        {getNextPageParam: lastPage => lastPage.nextCursor}
+        {
+            getNextPageParam: lastPage => lastPage.nextCursor,
+            initialData: {
+                pageParams: [],
+                pages: [
+                    initialTweets
+                ]
+            }
+        }
     );
 
     return (
@@ -21,4 +35,4 @@ export const FollowingTweets: FC = memo(({}) => {
             fetchNewTweets={tweets.fetchNextPage}
         />
     );
-});
+};

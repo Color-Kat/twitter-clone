@@ -17,7 +17,7 @@ export const RecentTweets: FC<{
             initialData: {
                 pageParams: [],
                 pages: [
-                    { ...initialTweets }
+                    initialTweets
                 ]
             }
         }
