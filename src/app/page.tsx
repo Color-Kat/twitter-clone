@@ -1,8 +1,6 @@
 import { NextPage } from 'next';
 import { NewTweetForm } from "@/components/NewTweetForm";
-import React from "react";
 import { Tabs } from "@/app/feed/components/Tabs";
-import { redirect } from "next/navigation";
 
 import RecentTweets from './feed/recent/page';
 

@@ -1,4 +1,5 @@
 'use client';
+
 import React, {memo, FC} from 'react';
 import Link from "next/link";
 import {signIn, signOut, useSession} from "next-auth/react";

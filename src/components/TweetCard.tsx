@@ -1,10 +1,9 @@
 import React, { memo, FC } from 'react';
 import { Tweet } from "@/types/Tweet";
 import Link from "next/link";
-import Image from "next/image";
 import { ProfileImage } from "@/components/ProfileImage";
-import { HeartButton } from "@/components/HeartButton";
 import { api } from "@/trpc/react";
+import { HeartButton } from "@/components/HeartButton";
 
 const dateTimeFormatter = Intl.DateTimeFormat('en-US', {
     dateStyle: "short"
@@ -55,7 +54,6 @@ export const TweetCard: FC<Tweet> = ({
         toggleLike.mutate({ id });
     }
 
-
     return (
         <li className="flex gap-4 border-b px-4 py-4">
             {/* Profile Image */}
@@ -68,7 +66,7 @@ export const TweetCard: FC<Tweet> = ({
                 <div className="flex gap-1">
                     {/* User name*/}
                     <Link
-                        href={`/prifiles/${user.id}`}
+                        href={`/profiles/${user.id}`}
                         className="font-bold hover:underline focus-visible:underline outline-none"
                     >
                         {user.name}

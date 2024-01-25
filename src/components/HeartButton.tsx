@@ -1,6 +1,6 @@
 'use client';
 
-import React, { memo, FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { useSession } from "next-auth/react";
 import { VscHeart, VscHeartFilled } from "react-icons/vsc";
 import { twJoin } from "tailwind-merge";
@@ -13,16 +13,16 @@ interface HeartButtonProps {
     isLoading: boolean;
 }
 
-export const HeartButton: FC<HeartButtonProps> = memo(({
+export const HeartButton: FC<HeartButtonProps> = ({
     likedByMe,
-    likeCount,
     onClick,
+    likeCount,
     isLoading
 }) => {
     const session = useSession();
     const HeartIcon = likedByMe
         ? VscHeartFilled
-        : VscHeart
+        : VscHeart;
 
     if (session.status !== 'authenticated') return (
         <div className="mb-1 mt-1 flex items-center gap-3 self-start text-gray-500">
@@ -56,4 +56,4 @@ export const HeartButton: FC<HeartButtonProps> = memo(({
             </span>
         </button>
     );
-});
+};

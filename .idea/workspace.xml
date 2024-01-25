@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server side recent tweets loading">
-      <change afterPath="$PROJECT_DIR$/src/app/feed/components/TabsWrapper.tsx" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server side component for following tweets, client component for tabs wrapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/components/Tabs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trpc/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/trpc/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeartButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeartButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RecentTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RecentTweets.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SideNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TweetCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TweetCard.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,8 +65,8 @@
       <recent name="D:\Programming\TwitterClone\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programming\TwitterClone\src\app\feed\components" />
       <recent name="D:\Programming\TwitterClone\src" />
+      <recent name="D:\Programming\TwitterClone\src\app\feed\components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,7 +88,7 @@
       <workItem from="1706031333004" duration="1323000" />
       <workItem from="1706074122228" duration="24000" />
       <workItem from="1706117300239" duration="6616000" />
-      <workItem from="1706195318452" duration="3685000" />
+      <workItem from="1706195318452" duration="6616000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -218,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706126144054</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="server side component for following tweets, client component for tabs wrapper">
+      <option name="closed" value="true" />
+      <created>1706200083261</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1706200083262</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +273,7 @@
     <MESSAGE value="idk what is it" />
     <MESSAGE value="server components for auth" />
     <MESSAGE value="server side recent tweets loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="server side recent tweets loading" />
+    <MESSAGE value="server side component for following tweets, client component for tabs wrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="server side component for following tweets, client component for tabs wrapper" />
   </component>
 </project>
