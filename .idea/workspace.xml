@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="server side component for following tweets, client component for tabs wrapper">
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="build 2">
+      <change afterPath="$PROJECT_DIR$/src/trpc/trpcNext.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trpc/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/trpc/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +42,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Programming/TwitterClone/src/app/(feed)&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -87,6 +85,8 @@
       <workItem from="1706074122228" duration="24000" />
       <workItem from="1706117300239" duration="6616000" />
       <workItem from="1706195318452" duration="6616000" />
+      <workItem from="1706256275270" duration="247000" />
+      <workItem from="1706287128947" duration="3287000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -224,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706200083262</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="build 2">
+      <option name="closed" value="true" />
+      <created>1706206812133</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1706206812133</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,6 +280,7 @@
     <MESSAGE value="server components for auth" />
     <MESSAGE value="server side recent tweets loading" />
     <MESSAGE value="server side component for following tweets, client component for tabs wrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="server side component for following tweets, client component for tabs wrapper" />
+    <MESSAGE value="build 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="build 2" />
   </component>
 </project>
