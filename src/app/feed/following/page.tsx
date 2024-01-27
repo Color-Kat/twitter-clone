@@ -6,7 +6,7 @@ import { serverApi } from "@/trpc/server";
 import { unstable_noStore as noStore } from "next/cache";
 
 const FollowingTweetsPage: NextPage = async ({}) => {
-    noStore();
+    // noStore();
     const tweets = await serverApi.tweet.infiniteFeed.query({
         onlyFollowing: true
     });
