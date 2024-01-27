@@ -19,10 +19,7 @@ export const RecentTweets: FC<{
                 pages: [
                     initialTweets
                 ]
-            },
-            refetchOnMount: false,
-            refetchOnReconnect: false,
-            refetchInterval: 1000 * 60
+            }
         }
     );
 

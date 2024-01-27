@@ -7,9 +7,14 @@ import { unstable_noStore as noStore } from "next/cache";
 
 const FollowingTweetsPage: NextPage = async ({}) => {
     // noStore();
-    const tweets = await serverApi.tweet.infiniteFeed.query({
+    // const tweets = await serverApi.tweet.infiniteFeed.query({
+    //     onlyFollowing: true
+    // });
+
+    const tweets = await serverClient.tweet.infiniteFeed({
         onlyFollowing: true
     });
+
     
     return (
         <TabsWrapper

@@ -21,16 +21,14 @@ export const metadata = {
     icons: [{rel: "icon", url: "/favicon.ico"}],
 };
 
-export const dynamic = "force-static";
-export const revalidate = 60;
+export const dynamic = "auto";
+export const revalidate = 10;
 
 export default function RootLayout({
                                        children,
                                    }: {
     children: React.ReactNode;
 }) {
-    noStore();
-
     return (
         <AuthProvider>
             <TRPCReactProvider>

@@ -3,5 +3,5 @@ import { httpBatchLink } from "@trpc/client";
 import { createTRPCContext } from "@/server/api/trpc";
 
 export const serverClient = appRouter.createCaller(
-    await createTRPCContext({} as any)
+    await createTRPCContext({} as any, false)
 )
