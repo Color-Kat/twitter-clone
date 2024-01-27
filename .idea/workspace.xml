@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="try to check nextjs provider" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="use route segment config for noStore" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +83,7 @@
       <workItem from="1706195318452" duration="6616000" />
       <workItem from="1706256275270" duration="247000" />
       <workItem from="1706287128947" duration="3404000" />
+      <workItem from="1706368503869" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -236,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706299842605</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="use route segment config for noStore">
+      <option name="closed" value="true" />
+      <created>1706368812622</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1706368812622</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,6 +295,7 @@
     <MESSAGE value="server side component for following tweets, client component for tabs wrapper" />
     <MESSAGE value="build 2" />
     <MESSAGE value="try to check nextjs provider" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to check nextjs provider" />
+    <MESSAGE value="use route segment config for noStore" />
+    <option name="LAST_COMMIT_MESSAGE" value="use route segment config for noStore" />
   </component>
 </project>

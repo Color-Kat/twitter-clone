@@ -21,7 +21,8 @@ export const metadata = {
     icons: [{rel: "icon", url: "/favicon.ico"}],
 };
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
+export const revalidate = 60;
 
 export default function RootLayout({
                                        children,
