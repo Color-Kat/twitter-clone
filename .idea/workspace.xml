@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="use route segment config for force-static server component behaviour">
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="load tweets using serverClient.ts and refetch likes on mount">
+      <change afterPath="$PROJECT_DIR$/src/server/api/routers/profile.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/api/trpc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/trpc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trpc/serverClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/trpc/serverClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/api/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/root.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,25 +39,26 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programming/TwitterClone/src/app/(feed)&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.XML&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Programming\\TwitterClone\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Programming/TwitterClone/src/server/api/routers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.sourceCode.XML",
+    "ts.external.directory.path": "D:\\Programming\\TwitterClone\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\TwitterClone\src\server\api\routers" />
       <recent name="D:\Programming\TwitterClone\src\app\(feed)" />
       <recent name="D:\Programming\TwitterClone\src\app\components" />
     </key>
@@ -91,7 +89,8 @@
       <workItem from="1706195318452" duration="6616000" />
       <workItem from="1706256275270" duration="247000" />
       <workItem from="1706287128947" duration="3404000" />
-      <workItem from="1706368503869" duration="7661000" />
+      <workItem from="1706368503869" duration="7873000" />
+      <workItem from="1706469922761" duration="1774000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -261,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706369120451</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="load tweets using serverClient.ts and refetch likes on mount">
+      <option name="closed" value="true" />
+      <created>1706384260070</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1706384260070</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,6 +320,7 @@
     <MESSAGE value="try to check nextjs provider" />
     <MESSAGE value="use route segment config for noStore" />
     <MESSAGE value="use route segment config for force-static server component behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="use route segment config for force-static server component behaviour" />
+    <MESSAGE value="load tweets using serverClient.ts and refetch likes on mount" />
+    <option name="LAST_COMMIT_MESSAGE" value="load tweets using serverClient.ts and refetch likes on mount" />
   </component>
 </project>
