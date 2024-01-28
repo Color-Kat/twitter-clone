@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="load tweets using serverClient.ts and refetch likes on mount">
-      <change afterPath="$PROJECT_DIR$/src/server/api/routers/profile.ts" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="profile router, generate metadata and page profile cache">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/api/root.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/root.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1706256275270" duration="247000" />
       <workItem from="1706287128947" duration="3404000" />
       <workItem from="1706368503869" duration="7873000" />
-      <workItem from="1706469922761" duration="1774000" />
+      <workItem from="1706469922761" duration="2692000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -268,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706384260070</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="profile router, generate metadata and page profile cache">
+      <option name="closed" value="true" />
+      <created>1706471770353</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1706471770353</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +327,7 @@
     <MESSAGE value="use route segment config for noStore" />
     <MESSAGE value="use route segment config for force-static server component behaviour" />
     <MESSAGE value="load tweets using serverClient.ts and refetch likes on mount" />
-    <option name="LAST_COMMIT_MESSAGE" value="load tweets using serverClient.ts and refetch likes on mount" />
+    <MESSAGE value="profile router, generate metadata and page profile cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="profile router, generate metadata and page profile cache" />
   </component>
 </project>

@@ -3,6 +3,7 @@ import { serverClient } from "@/trpc/serverClient";
 import { cache } from "react";
 
 export const dynamic = "force-static";
+export const dynamicParams = true
 
 interface Props {
     params: {
@@ -23,7 +24,7 @@ export async function generateMetadata(
 ): Promise<Metadata> {
     const profile = await getProfile(params.id);
 
-    if(!profile) return {
+    if (!profile) return {
         title: 'Profile Not Found'
     }
 
@@ -33,10 +34,10 @@ export async function generateMetadata(
     }
 }
 
-const ProfilePage: NextPage<Props> = async ({params}) => {
+const ProfilePage: NextPage<Props> = async ({ params }) => {
     const profile = await getProfile(params.id);
 
-    console.log(profile)
+    // console.log(profile)
 
     return (
         <>
@@ -44,5 +45,13 @@ const ProfilePage: NextPage<Props> = async ({params}) => {
         </>
     );
 };
+
+export async function generateStaticParams() {
+    const profileIds = await serverClient.profile.getAllProfileIds();
+
+    // I think that it's not so good to prerender tons of profiles,
+    // But let's do it for practice
+    return profileIds;
+}
 
 export default ProfilePage

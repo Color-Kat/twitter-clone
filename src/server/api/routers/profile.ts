@@ -38,4 +38,10 @@ export const profileRouter = createTRPCRouter({
                 isFollowing: profile.followers?.length > 0,
             }
         }),
+    getAllProfileIds: publicProcedure
+        .query(async ({ctx}) => {
+            return await ctx.db.user.findMany({
+                select: {id: true}
+            })
+        })
 });
