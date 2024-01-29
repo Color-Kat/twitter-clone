@@ -27,7 +27,7 @@ export const SideNav: FC = ({}) => {
                 </li>
 
                 {user && <li>
-                    <Link href="/">
+                    <Link href={`/profiles/${user.id}`}>
                         <IconHoverEffect>
                             <span className="flex items-center gap-4">
                                 <VscAccount className="h-8 w-8"/>

@@ -1,17 +1,36 @@
-import React, { memo, FC } from 'react';
+'use client';
+
+import React, { FC } from 'react';
+import { useSession } from "next-auth/react";
+import { Button } from "@/UI/Button";
 
 interface FollowButtonProps {
     isFollowing: boolean;
     userId: string;
-    onClick: () => void;
+    // onClick: () => void;
 }
 
-export const FollowButton: FC<FollowButtonProps> = ({}) => {
+export const FollowButton: FC<FollowButtonProps> = ({
+    isFollowing,
+    userId,
+    // onClick
+}) => {
+    const session = useSession();
 
+    const onClick = () => {
+        
+    }
+
+    if(session.status === "unauthenticated" || session.data?.user.id == userId)
+        return null;
 
     return (
-        <div className="">
-            Follow
-        </div>
+        <Button
+            onClick={onClick}
+            small
+            gray={isFollowing}
+        >
+            {isFollowing ? "Unfollow" : "Follow"}
+        </Button>
     );
 }

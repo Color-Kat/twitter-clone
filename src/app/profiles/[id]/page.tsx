@@ -87,13 +87,13 @@ const ProfilePage: NextPage<Props> = async ({ params }) => {
                         {"Followings"}
                     </div>
 
-                    <FollowButton
-                        isFollowing={profile.isFollowing}
-                        userId={params.id}
-                        onClick={() => {
-                        }}
-                    />
                 </div>
+
+                <FollowButton
+                    isFollowing={profile.isFollowing}
+                    userId={params.id}
+                    // onClick={() => {}}
+                />
             </header>
 
             <main className="">
