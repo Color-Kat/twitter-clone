@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="profile router, generate metadata and page profile cache">
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="generate static params for prodiles">
+      <change afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FollowButton.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProfileTweets.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/api/routers/tweet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/routers/tweet.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,19 +47,20 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Programming/TwitterClone/src/server/api/routers",
+    "last_opened_file_path": "D:/Programming/TwitterClone/src/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.XML",
+    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
     "ts.external.directory.path": "D:\\Programming\\TwitterClone\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programming\TwitterClone\src\components" />
       <recent name="D:\Programming\TwitterClone\src\server\api\routers" />
       <recent name="D:\Programming\TwitterClone\src\app\(feed)" />
       <recent name="D:\Programming\TwitterClone\src\app\components" />
@@ -88,7 +93,8 @@
       <workItem from="1706256275270" duration="247000" />
       <workItem from="1706287128947" duration="3404000" />
       <workItem from="1706368503869" duration="7873000" />
-      <workItem from="1706469922761" duration="2692000" />
+      <workItem from="1706469922761" duration="3357000" />
+      <workItem from="1706546344836" duration="3590000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -274,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706471770353</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="generate static params for prodiles">
+      <option name="closed" value="true" />
+      <created>1706472966191</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1706472966191</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +342,7 @@
     <MESSAGE value="use route segment config for force-static server component behaviour" />
     <MESSAGE value="load tweets using serverClient.ts and refetch likes on mount" />
     <MESSAGE value="profile router, generate metadata and page profile cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="profile router, generate metadata and page profile cache" />
+    <MESSAGE value="generate static params for prodiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate static params for prodiles" />
   </component>
 </project>
