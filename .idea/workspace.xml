@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="toggle follow">
-      <change afterPath="$PROJECT_DIR$/src/app/profiles/[id]/Profile.tsx" afterDir="false" />
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="invalidate getById when click on toggle folloew button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/profiles/[id]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FollowButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FollowButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/api/routers/profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/routers/profile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/api/routers/tweet.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/api/routers/tweet.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1706546344836" duration="11445000" />
       <workItem from="1706602909605" duration="616000" />
       <workItem from="1706616618919" duration="6876000" />
-      <workItem from="1706636765285" duration="1560000" />
+      <workItem from="1706636765285" duration="3041000" />
     </task>
     <task id="LOCAL-00001" summary="set up local and production boilplate">
       <option name="closed" value="true" />
@@ -322,7 +321,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706636467516</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="invalidate getById when click on toggle folloew button">
+      <option name="closed" value="true" />
+      <created>1706638366216</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1706638366216</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +361,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="display NewTweetForm.tsx, ProfileImage.tsx and Button.tsx components" />
     <MESSAGE value="auto adjust new tweet form" />
     <MESSAGE value="load recent tweets with infinite scroll" />
     <MESSAGE value="like button with likeCount and IconHoverEffect.tsx for nav" />
@@ -379,6 +385,7 @@
     <MESSAGE value="some credential login" />
     <MESSAGE value="login with credentials" />
     <MESSAGE value="toggle follow" />
-    <option name="LAST_COMMIT_MESSAGE" value="toggle follow" />
+    <MESSAGE value="invalidate getById when click on toggle folloew button" />
+    <option name="LAST_COMMIT_MESSAGE" value="invalidate getById when click on toggle folloew button" />
   </component>
 </project>

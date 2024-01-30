@@ -9,6 +9,7 @@ import {
 import { inferAsyncReturnType } from "@trpc/server";
 import { Prisma } from ".prisma/client";
 import TweetWhereInput = Prisma.TweetWhereInput;
+import { revalidatePath } from "next/cache";
 
 export const tweetRouter = createTRPCRouter({
     infiniteProfileFeed: publicProcedure
@@ -63,6 +64,8 @@ export const tweetRouter = createTRPCRouter({
     create: protectedProcedure
         .input(z.object({ content: z.string() }))
         .mutation(async ({ input: { content }, ctx }) => {
+            revalidatePath(`/profiles/${ctx.session.user.id}`);
+
             return await ctx.db.tweet.create({
                 data: {
                     content,

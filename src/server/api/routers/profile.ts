@@ -3,6 +3,7 @@ import {
     createTRPCRouter, protectedProcedure, publicProcedure,
 } from "@/server/api/trpc";
 import { Prisma } from ".prisma/client";
+import { revalidatePath } from "next/cache";
 
 export const profileRouter = createTRPCRouter({
     getById: publicProcedure
@@ -75,6 +76,10 @@ export const profileRouter = createTRPCRouter({
                 });
                 addedFollow = false;
             }
+
+            // On-demand revalidation
+            revalidatePath(`/profiles/${userId}`);
+            revalidatePath(`/profiles/${currentUserId}`);
 
             return {addedFollow};
         }),
