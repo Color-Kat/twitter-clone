@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="other invalidates">
+    <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="fix loading page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/loading.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/feed/following/loading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706639965266</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix loading page">
+      <option name="closed" value="true" />
+      <created>1706642409031</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1706642409031</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +380,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="load recent tweets with infinite scroll" />
     <MESSAGE value="like button with likeCount and IconHoverEffect.tsx for nav" />
     <MESSAGE value="infinite scroll" />
     <MESSAGE value="toggle likes" />
@@ -395,6 +404,7 @@
     <MESSAGE value="toggle follow" />
     <MESSAGE value="invalidate getById when click on toggle folloew button" />
     <MESSAGE value="other invalidates" />
-    <option name="LAST_COMMIT_MESSAGE" value="other invalidates" />
+    <MESSAGE value="fix loading page" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix loading page" />
   </component>
 </project>
