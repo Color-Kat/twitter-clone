@@ -17,9 +17,25 @@ export const FollowButton: FC<FollowButtonProps> = ({
     // onClick
 }) => {
     const session = useSession();
+
+    const trpcUtils = api.useUtils();
     const toggleFollow = api.profile.toggleFollow.useMutation({
         onSuccess: ({addedFollow}) => {
+            console.log(1312)
+            trpcUtils.profile.getById.setData(
+                {id: userId},
+                (prev) => {
+                    if(!prev) return;
 
+                    const countModifier = addedFollow ? 1 : -1;
+                    console.log('here', addedFollow);
+                    return {
+                        ...prev,
+                        isFollowing: addedFollow,
+                        followersCount: prev.followersCount + countModifier
+                    }
+                }
+            )
         }
     })
 
