@@ -1,6 +1,6 @@
 import {NextPage} from 'next';
 import { TabsWrapper } from "@/app/feed/components/TabsWrapper";
-import { FollowingTweets } from "@/components/FollowingTweets";
+import { FollowingTweets } from "@/app/feed/following/FollowingTweets";
 import { serverClient } from "@/trpc/serverClient";
 import { serverApi } from "@/trpc/server";
 import { unstable_noStore as noStore } from "next/cache";

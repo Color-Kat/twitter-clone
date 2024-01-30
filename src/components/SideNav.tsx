@@ -10,10 +10,8 @@ export const SideNav: FC = ({}) => {
     const {data: session} = useSession();
     const user = session?.user;
 
-    console.log(session);
-
     return (
-        <nav className="sticky top-0 px-2 py-4">
+        <nav className="sticky top-0 px-2 py-4 md:w-[150px]">
             <ul className="flex flex-col items-center gap-2 whitespace-normal">
                 <li>
                     <Link href="/">

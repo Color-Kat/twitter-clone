@@ -5,7 +5,6 @@ import {Inter} from "next/font/google";
 import {TRPCReactProvider} from "@/trpc/react";
 import {SideNav} from "@/components/SideNav";
 import {AuthProvider} from "@/components/AuthProvider";
-import { unstable_noStore as noStore } from "next/cache";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -22,7 +21,7 @@ export const metadata = {
 };
 
 export const dynamic = "auto";
-export const revalidate = 10;
+// export const revalidate = 10;
 
 export default function RootLayout({
                                        children,
