@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="caa4a7ee-a1b6-44b7-9520-426b40b7c1be" name="Changes" comment="other invalidates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/feed/following/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/loading.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FollowingTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/FollowingTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecentTweets.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/recent/RecentTweets.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SideNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SideNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/loading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/feed/following/loading.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="c01ac1e7c01d31fe3c40e58ca259521597b3148d" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,8 +63,8 @@
       <recent name="D:\Programming\TwitterClone\src\app\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Programming\TwitterClone\src\app\feed\recent" />
       <recent name="D:\Programming\TwitterClone\src\app\feed\following" />
+      <recent name="D:\Programming\TwitterClone\src\app\feed\recent" />
       <recent name="D:\Programming\TwitterClone\src" />
       <recent name="D:\Programming\TwitterClone\src\app\feed\components" />
     </key>
